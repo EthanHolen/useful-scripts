@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Converting all of your markdown files to pdfs :)"
+echo
+
+for i in *.md
+do
+    name=${i%.*}
+    echo "$i >> $name.pdf"
+    pandoc -s $i -o $name.pdf
+
+
+done
+
+echo
+
+echo "All done have a nice day!"
