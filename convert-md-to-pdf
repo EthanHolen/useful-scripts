@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Converts all .md files in a folder to pdfs
+# install pandoc and prolly latex to use?
+
 echo "Converting all of your markdown files to pdfs :)"
 echo
 
