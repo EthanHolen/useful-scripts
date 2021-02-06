@@ -7,4 +7,4 @@ alias sha1=shasum
 alias sha256='shasum -a 256'
 alias sha512='shasum -a 512'
 alias sshi='ssh -i /path/to/your/key.pem'
-uuid='python -c "import uuid; import sys; sys.stdout.write(str(uuid.uuid4()))"'
+alias uuid='python -c "import uuid; import sys; sys.stdout.write(str(uuid.uuid4()))"'
