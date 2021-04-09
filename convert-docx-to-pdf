@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Converts all .docx files in a folder to pdfs
+# install pandoc and prolly latex to use?
+
+echo "Converting all of your word .docx files to pdfs :)"
+echo
+
+for i in *.docx
+do
+    name=${i%.*}
+    echo "$i >> $name.pdf"
+    pandoc $i -o $name.pdf
+
+
+done
+
+echo
+
+echo "All done have a nice day!"

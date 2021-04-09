@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Converts all .md files in a folder to pdfs
+# install pandoc and prolly latex to use?
+
+echo "Converting all of your m4a files to mp3s :)"
+echo
+
+for i in *.m4a
+do
+    name=${i%.*}
+    echo "$i >> $name.mp3"
+    ffmpeg -i $i $name.mp3
+
+
+done
+
+echo
+
+echo "All done have a nice day!"
+
